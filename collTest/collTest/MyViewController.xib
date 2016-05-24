@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7706" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MyViewController">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="P0Q-eO-caW">
+                    <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="S4x-WV-GHz">
+                            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                            <subviews>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tRy-Ab-y95">
+                                    <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                    <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="300" id="HT5-Iy-kxh">
+                                            <variation key="widthClass=compact" constant="300"/>
+                                        </constraint>
+                                    </constraints>
+                                    <variation key="default">
+                                        <mask key="constraints">
+                                            <exclude reference="HT5-Iy-kxh"/>
+                                        </mask>
+                                    </variation>
+                                    <variation key="widthClass=compact">
+                                        <mask key="constraints">
+                                            <include reference="HT5-Iy-kxh"/>
+                                        </mask>
+                                    </variation>
+                                </view>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OuI-72-Kao">
+                                    <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                    <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="10" id="g40-8z-X26"/>
+                                    </constraints>
+                                    <variation key="default">
+                                        <mask key="constraints">
+                                            <exclude reference="g40-8z-X26"/>
+                                        </mask>
+                                    </variation>
+                                    <variation key="widthClass=compact">
+                                        <mask key="constraints">
+                                            <include reference="g40-8z-X26"/>
+                                        </mask>
+                                    </variation>
+                                </view>
+                            </subviews>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstItem="OuI-72-Kao" firstAttribute="leading" secondItem="S4x-WV-GHz" secondAttribute="leading" id="9EB-GG-ObY"/>
+                                <constraint firstItem="tRy-Ab-y95" firstAttribute="top" secondItem="S4x-WV-GHz" secondAttribute="top" id="WUe-gO-tNw"/>
+                                <constraint firstItem="tRy-Ab-y95" firstAttribute="leading" secondItem="S4x-WV-GHz" secondAttribute="leading" id="eaY-sB-bH2"/>
+                                <constraint firstItem="OuI-72-Kao" firstAttribute="top" secondItem="tRy-Ab-y95" secondAttribute="bottom" constant="10" id="leg-Xy-8g5"/>
+                                <constraint firstAttribute="trailing" secondItem="tRy-Ab-y95" secondAttribute="trailing" id="lyY-hM-chP"/>
+                                <constraint firstAttribute="bottom" secondItem="OuI-72-Kao" secondAttribute="bottom" id="rrh-Hf-Zzi"/>
+                                <constraint firstAttribute="trailing" secondItem="OuI-72-Kao" secondAttribute="trailing" id="xT4-ol-mp9"/>
+                            </constraints>
+                            <variation key="default">
+                                <mask key="subviews">
+                                    <exclude reference="tRy-Ab-y95"/>
+                                    <exclude reference="OuI-72-Kao"/>
+                                </mask>
+                                <mask key="constraints">
+                                    <exclude reference="WUe-gO-tNw"/>
+                                    <exclude reference="eaY-sB-bH2"/>
+                                    <exclude reference="lyY-hM-chP"/>
+                                    <exclude reference="9EB-GG-ObY"/>
+                                    <exclude reference="leg-Xy-8g5"/>
+                                    <exclude reference="rrh-Hf-Zzi"/>
+                                    <exclude reference="xT4-ol-mp9"/>
+                                </mask>
+                            </variation>
+                            <variation key="widthClass=compact">
+                                <mask key="subviews">
+                                    <include reference="tRy-Ab-y95"/>
+                                    <include reference="OuI-72-Kao"/>
+                                </mask>
+                                <mask key="constraints">
+                                    <include reference="WUe-gO-tNw"/>
+                                    <include reference="eaY-sB-bH2"/>
+                                    <include reference="lyY-hM-chP"/>
+                                    <include reference="9EB-GG-ObY"/>
+                                    <include reference="leg-Xy-8g5"/>
+                                    <include reference="rrh-Hf-Zzi"/>
+                                    <include reference="xT4-ol-mp9"/>
+                                </mask>
+                            </variation>
+                        </view>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="S4x-WV-GHz" firstAttribute="leading" secondItem="P0Q-eO-caW" secondAttribute="leading" id="B8A-LB-Cea"/>
+                        <constraint firstAttribute="trailing" secondItem="S4x-WV-GHz" secondAttribute="trailing" id="Gaq-Gf-PU4"/>
+                        <constraint firstItem="S4x-WV-GHz" firstAttribute="height" secondItem="P0Q-eO-caW" secondAttribute="height" id="SRM-Hq-hpx"/>
+                        <constraint firstItem="S4x-WV-GHz" firstAttribute="width" secondItem="P0Q-eO-caW" secondAttribute="width" id="l7u-js-8rO"/>
+                        <constraint firstAttribute="bottom" secondItem="S4x-WV-GHz" secondAttribute="bottom" id="nBR-gl-CbX"/>
+                        <constraint firstItem="S4x-WV-GHz" firstAttribute="top" secondItem="P0Q-eO-caW" secondAttribute="top" id="pAn-YA-pPL"/>
+                    </constraints>
+                    <variation key="default">
+                        <mask key="subviews">
+                            <exclude reference="S4x-WV-GHz"/>
+                        </mask>
+                        <mask key="constraints">
+                            <exclude reference="B8A-LB-Cea"/>
+                            <exclude reference="Gaq-Gf-PU4"/>
+                            <exclude reference="SRM-Hq-hpx"/>
+                            <exclude reference="l7u-js-8rO"/>
+                            <exclude reference="nBR-gl-CbX"/>
+                            <exclude reference="pAn-YA-pPL"/>
+                        </mask>
+                    </variation>
+                    <variation key="widthClass=compact">
+                        <mask key="subviews">
+                            <include reference="S4x-WV-GHz"/>
+                        </mask>
+                        <mask key="constraints">
+                            <include reference="B8A-LB-Cea"/>
+                            <include reference="Gaq-Gf-PU4"/>
+                            <exclude reference="SRM-Hq-hpx"/>
+                            <include reference="l7u-js-8rO"/>
+                            <include reference="nBR-gl-CbX"/>
+                            <include reference="pAn-YA-pPL"/>
+                        </mask>
+                    </variation>
+                </scrollView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="P0Q-eO-caW" secondAttribute="bottom" id="2w1-Zz-Iw7"/>
+                <constraint firstAttribute="trailing" secondItem="P0Q-eO-caW" secondAttribute="trailing" id="Ms5-p6-Vup"/>
+                <constraint firstItem="P0Q-eO-caW" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="gWl-sv-hwn"/>
+                <constraint firstItem="P0Q-eO-caW" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="pj3-Nb-M4I"/>
+            </constraints>
+            <variation key="default">
+                <mask key="subviews">
+                    <exclude reference="P0Q-eO-caW"/>
+                </mask>
+                <mask key="constraints">
+                    <exclude reference="2w1-Zz-Iw7"/>
+                    <exclude reference="Ms5-p6-Vup"/>
+                    <exclude reference="gWl-sv-hwn"/>
+                    <exclude reference="pj3-Nb-M4I"/>
+                </mask>
+            </variation>
+            <variation key="widthClass=compact">
+                <mask key="subviews">
+                    <include reference="P0Q-eO-caW"/>
+                </mask>
+                <mask key="constraints">
+                    <include reference="2w1-Zz-Iw7"/>
+                    <include reference="Ms5-p6-Vup"/>
+                    <include reference="gWl-sv-hwn"/>
+                    <include reference="pj3-Nb-M4I"/>
+                </mask>
+            </variation>
+            <point key="canvasLocation" x="281" y="6"/>
+        </view>
+    </objects>
+</document>

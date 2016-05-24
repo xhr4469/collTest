@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
+                        <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nRr-OB-PA3">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <color key="backgroundColor" red="0.023529411760000001" green="0.59215686270000001" blue="0.95294117649999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="cKG-zd-zdn"/>
+                                </constraints>
+                                <state key="normal" title="Button">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="cKG-zd-zdn"/>
+                                    </mask>
+                                </variation>
+                                <variation key="widthClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="cKG-zd-zdn"/>
+                                    </mask>
+                                </variation>
+                                <connections>
+                                    <action selector="testAction:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="S3y-is-lib"/>
+                                </connections>
+                            </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bN1-m2-aZn">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <color key="backgroundColor" red="0.94117647059999998" green="0.96078431369999995" blue="0.96862745100000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="200" id="Hrg-vH-oLl"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="Hrg-vH-oLl"/>
+                                    </mask>
+                                </variation>
+                                <variation key="widthClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="Hrg-vH-oLl"/>
+                                    </mask>
+                                </variation>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="nRr-OB-PA3" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" constant="10" id="B9v-49-XR4"/>
+                            <constraint firstItem="nRr-OB-PA3" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="100" id="H1G-VI-xLS"/>
+                            <constraint firstAttribute="trailing" secondItem="nRr-OB-PA3" secondAttribute="trailing" constant="10" id="ZQ4-Gh-p8L"/>
+                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="bN1-m2-aZn" secondAttribute="bottom" id="oZU-q2-qea"/>
+                            <constraint firstItem="bN1-m2-aZn" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" id="tOg-py-QZ5"/>
+                            <constraint firstAttribute="trailing" secondItem="bN1-m2-aZn" secondAttribute="trailing" id="tSb-Ov-foU"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="nRr-OB-PA3"/>
+                                <exclude reference="bN1-m2-aZn"/>
+                            </mask>
+                            <mask key="constraints">
+                                <exclude reference="B9v-49-XR4"/>
+                                <exclude reference="H1G-VI-xLS"/>
+                                <exclude reference="ZQ4-Gh-p8L"/>
+                                <exclude reference="tOg-py-QZ5"/>
+                                <exclude reference="tSb-Ov-foU"/>
+                                <exclude reference="oZU-q2-qea"/>
+                            </mask>
+                        </variation>
+                        <variation key="widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="nRr-OB-PA3"/>
+                                <include reference="bN1-m2-aZn"/>
+                            </mask>
+                            <mask key="constraints">
+                                <include reference="B9v-49-XR4"/>
+                                <include reference="H1G-VI-xLS"/>
+                                <include reference="ZQ4-Gh-p8L"/>
+                                <include reference="tOg-py-QZ5"/>
+                                <include reference="tSb-Ov-foU"/>
+                                <include reference="oZU-q2-qea"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <connections>
+                        <outlet property="showView" destination="bN1-m2-aZn" id="uSf-4u-raW"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>
